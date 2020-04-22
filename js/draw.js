@@ -1,11 +1,4 @@
-/*
-* criar um xadrez em cima do .draw
-* criar um canva
-* ditar o canva embaixo do xadrez
-* addEventList
 
-400/height = tamanho do pixel
-*/
 
 var area = document.getElementById('painting');
 var button = document.getElementById('button');
