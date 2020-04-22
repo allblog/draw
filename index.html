@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Pixel</title>
+  <meta name="description" content="">
+  <meta name="author" content="Lucas Carinhanha">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<input type="radio" name="radial" id="moveR" class="hide">
+<input type="radio" name="radial" id="moveL" class="hide">
+
+      <div class="container-fluid struct">
+        <div class="row">
+          <div class="one-half column left"> <!-- side left -->
+
+            <div class="container"><!-- Container -->
+              <div class="row">
+                <div class="twelve column">
+
+                  <h1>Draw</h1>
+
+                  <div class="colors">
+
+                    <div class="label red"><label for="red">red</label></div>
+                    <div class="label white"><label for="white">white</label></div>
+                    <div class="label grey"><label for="grey">grey</label></div>
+                    <div class="label pink"><label for="pink">pink</label></div>
+                    <div class="label orange"><label for="orange">orange</label></div>
+                    <div class="label purple"><label for="purple">purple</label></div>
+                    <div class="label brown"><label for="brown">brown</label></div>
+                    <div class="label blue"><label for="blue">blue</label></div>
+                    <div class="label yellow"><label for="yellow">yellow</label></div>
+                    <div class="label green"><label for="green">green</label></div>
+                    <div class="label black"><label for="black">black</label></div>
+
+                  </div>
+
+                  <p id="coordenadas">0</p>
+                  <div id="painting">
+                    <canvas id="canvas" height="500" width="500"></canvas>
+                  </div><!-- end painting -->
+                </div><!-- end Twelve column -->
+              </div><!-- end Row -->
+            </div><!-- end Container -->
+
+            <div id="moveToRight">
+              <label for="moveR"><span class="material-icons">keyboard_arrow_right</span></label>
+            </div>
+
+          </div><!-- end side left -->
+
+          <div class="one-half column right"><!-- side right -->
+            <div class="container">
+
+              <h1>Seting</h1>
+              <div class="area">
+                <form>
+                  <div class="row">
+
+                    <div class="five columns form-padding">
+                      <input class="u-full-width" type="number" value="500" placeholder="height" id="height">
+                    </div>
+                    <div class="five columns form-padding">
+                      <input class="u-full-width" type="number" value="500" placeholder="width" id="width">
+                    </div>
+                    <div class="one columns form-padding">
+                      <a class="button" id="button">create</a>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div><!-- end Container -->
+
+            <div id="moveToLeft">
+              <label for="moveL"><span class="material-icons">keyboard_arrow_left</span></label>
+            </div>
+
+          </div><!-- end side right -->
+
+
+      </div>
+      </div>
+
+
+      <input class="colors hide" type="radio" name="color" value="red" id="red">
+      <input class="colors hide" type="radio" name="color" value="white" id="white">
+      <input class="colors hide" type="radio" name="color" value="grey" id="grey">
+      <input class="colors hide" type="radio" name="color" value="pink" id="pink">
+      <input class="colors hide" type="radio" name="color" value="orange" id="orange">
+      <input class="colors hide" type="radio" name="color" value="purple" id="purple">
+      <input class="colors hide" type="radio" name="color" value="brown" id="brown">
+      <input class="colors hide" type="radio" name="color" value="blue" id="blue">
+      <input class="colors hide" type="radio" name="color" value="yellow" id="yellow">
+      <input class="colors hide" type="radio" name="color" value="green" id="green">
+      <input class="colors hide" type="radio" name="color" value="black" id="black">
+
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+      <script src="js/draw.js"></script>
+</body>
+</html>

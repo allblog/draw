@@ -1,0 +1,114 @@
+:root{
+  --color-one: #f378ff;
+  --color-two: #6db7e8;
+  --color-tree: #e8bf6d;
+  --color-four: #9dff85;
+  --color-five: #ff217c;
+}
+html, body{
+  margin: 0;
+  line-height: 0;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+canvas{
+  border: 1px dashed var(--color-four);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: url('../images/cursor.cur') 4 12, auto;
+}
+
+.hide{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.struct{
+  width: 200%;
+}
+
+.left{
+  background-image: linear-gradient(#db53e9,#65196c);
+  margin: 0;
+  width: 50% !important;
+  height: 100vh;
+}
+
+.right{
+  background-color: var(--color-two);
+  margin: 0;
+  width: 50% !important;
+  height: 100vh;
+}
+
+.form-padding{
+  padding-top: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#height, #width,.button{
+  background: var(--color-four);
+
+}
+
+#moveToLeft, #moveToRight{
+  height: 35px;
+  width: 45px;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+#moveToRight{
+  float: right;
+  margin-right: 50px;
+  margin-top: -20%;
+  background-color: var(--color-two);
+}
+#moveToLeft{
+  float: left;
+  margin-left: 50px;
+  margin-top: -20%;
+  background-color: var(--color-one);
+}
+#painting{
+  /*border: 1px solid var(--color-four);*/
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+#coordenadas{
+  text-align: left;
+}
+input[type="radio"]:checked + input + div{
+  margin-left: -100%;
+}
+input[type="radio"]:checked + div{
+  margin-right: 100%;
+}
+.colors{
+  float: right;
+}
+.label{
+  float: left;
+  margin-left: 10px;
+  display: inline-block;
+}
+.red{color: red;}
+.white{color: white;}
+.grey{color: grey;}
+.pink{color: pink;}
+.orange{color: orange;}
+.purple{color: purple;}
+.brown{color: brown;}
+.blue{color: blue;}
+.yellow{color: yellow;}
+.green{color: green;}
+.black{color: black;}
