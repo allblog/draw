@@ -22,42 +22,9 @@ canvas{
   cursor: url('../images/cursor.cur') 4 12, auto;
 }
 
-.hide{
-  height: 0;
-  width: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-.struct{
-  width: 200%;
-}
-
-.left{
-  background-image: linear-gradient(#db53e9,#65196c);
-  margin: 0;
-  width: 50% !important;
-  height: 100vh;
-}
-
-.right{
-  background-color: var(--color-two);
-  margin: 0;
-  width: 50% !important;
-  height: 100vh;
-}
-
-.form-padding{
-  padding-top: 25%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 #height, #width,.button{
   background: var(--color-four);
-
 }
-
 #moveToLeft, #moveToRight{
   height: 35px;
   width: 45px;
@@ -80,18 +47,45 @@ canvas{
   background-color: var(--color-one);
 }
 #painting{
-  /*border: 1px solid var(--color-four);*/
   overflow-x: hidden;
   margin: 0 auto;
 }
 #coordenadas{
   text-align: left;
 }
+
 input[type="radio"]:checked + input + div{
   margin-left: -100%;
 }
 input[type="radio"]:checked + div{
   margin-right: 100%;
+}
+
+.hide{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.struct{
+  width: 200%;
+}
+.left{
+  background-image: linear-gradient(#db53e9,#65196c);
+  margin: 0;
+  width: 50% !important;
+  height: 100vh;
+}
+.right{
+  background-color: var(--color-two);
+  margin: 0;
+  width: 50% !important;
+  height: 100vh;
+}
+.form-padding{
+  padding-top: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .colors{
   float: right;
