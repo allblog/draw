@@ -1,5 +1,6 @@
-
-
+/*
+* Não altere nada desta linha para baixo.
+*/
 var area = document.getElementById('painting');
 var button = document.getElementById('button');
 
@@ -25,7 +26,6 @@ $(document).ready(function(){
     eixoX = event.pageX - $("#canvas").offset().left;
     eixoY = event.pageY - $("#canvas").offset().top;
 
-    //console.log("X = "+eixoX+" - Y = "+eixoY);
     $("#coordenadas").text("X = "+eixoX+" - Y = "+eixoY);
 
 
